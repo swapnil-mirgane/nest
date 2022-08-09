@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Req } from '@nestjs/common';
+import { Controller, Get, Post, Req,Param } from '@nestjs/common';
 import { Request } from 'express';
 import { AppService } from './app.service';
 
@@ -14,5 +14,6 @@ export class AppController {
   add(@Req() req:Request){
     return 'hi you are login success full'+" "+req.body.uname;
   }
+ 
 
 }
